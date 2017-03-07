@@ -46,37 +46,37 @@ table {
     border-spacing: 0;
 }
 
-/* Мои стили */
-body {
-    font: 16px "Times New Roman";
-    line-height: 1.2;
-    background-color: grey;
+/* my style */
+body{
+    font: 16px "Times New Roman", serif;
+    background-color: #EEEEEE;
 }
 .main{
     width: 420px;
     height: 615px;
+    border:  #D5D5D5 1px solid;
     margin: 5px auto 60px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-.wrapper {
-    margin-left: 35px;
-}
-hr {
-    margin: 15px 30px 15px -5px;
-}
-.header {
-    text-align: center;
-}
-h3 {
+.header{
     font: bold 18px "Times New Roman";
-    margin-top: 40px;
+    text-align: center;
+    margin-top:40px;
 }
-.university, .advantage, .goal, .contacts, .profile{
- margin-bottom: 15px;
+.content{
+    border-bottom: 1px solid #AFAFAF;
+    margin: 0 30px 20px 30px;
+    padding: 0 0 15px 10px;
+}
+.info{
+    margin-bottom: 20px;
 }
 ul{
-    margin-left: 20px;
     list-style-type: disc;
+    padding-left: 25px;
+}
+.feedback{
+    margin-left: 30px;
+    padding-left: 10px;
 }
