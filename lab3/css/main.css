@@ -104,13 +104,17 @@ body{
 
 .left_menu ul a{
     color: #656363;
+    width: 238px;
+    padding: 0 15px;
     text-decoration: none;
+    line-height: 39px;
 }
-
+.left_menu li:hover{
+    background: grey;
+}
 .left_menu ul a:hover{
-    background-color: #f9f9f9;
     color: #2c2c2c;
-    padding-left: 35px;
+    padding-left: 50px;
 }
 
 .content{
@@ -126,19 +130,12 @@ body{
     text-align: center;
     padding: 45px 0 ;
 }
-
-.bike img{
-    width: 500px;
-    height: 307px;
-}
-
 .text{
     color: #2c2b2b;
     font-size: 14px;
     padding: 40px 30px 60px 25px;
     line-height: 1.5;
 }
-
 .footer{
     clear: both;
     height: 40px;
@@ -173,7 +170,6 @@ body{
 }
 
 .footer p{
-    display: inline;
     float: right;
     color: #2c2c2c;
     font-size: 13px;
