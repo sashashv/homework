@@ -3,110 +3,92 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
-
+.clearfix,
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
 body{
     font-family: Tahoma, sans-serif;
-    margin-bottom: 20px; /*for footer*/
+    position: relative;
+    background: linear-gradient(to bottom, #40c5d3, #0c739f);
 }
-.main_wrapper {
-    background: url(../img/bg.jpg) no-repeat;
-    background-position: top;
-    width: 1280px;
-    height: 1060px;
-    margin: 0 auto;
-}
+
 .wrapper{
     background: #fff;
     box-shadow: 0 3px 10px rgba(0,0,0,.5);
     margin:0 auto;
     width: 1000px;
-    height: 991px;
-}
-.google_head{
-    position: relative;
-    width: 1280px;
-    height: 38px;
-}
-.google_head img{
-    position: absolute;
-    top: -24px;
 }
 
 .header{
     height: 175px;
-    position: relative;
     color: #1289a7;
     font-size: 12px;
 }
 
-.logo a img{
-    position: absolute;
-    bottom: 0;
-    left: 30px;
+.logo{
+    float:left;
+    padding: 10px 0 0 25px;
 }
-
-.logo p{
-    position: absolute;
-    bottom: 50px;
-    left: 100px;
+.logo a{
+    display: inline-block;
 }
-
+.contacts, .directions {
+    float: right;
+}
 .contacts{
     opacity: .8;
     line-height: 1.5;
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    padding: 10px 30px 0 0;
 }
 /*меню стран*/
 .directions{
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
+    clear:right;
+    padding: 23px 25px 0 0;
 }
-
-.navigation li{
+.directions .navigation{
+    font-size: 0;
+}
+.directions .navigation li{
     display: inline-block;
 }
-.navigation li a{
-    display: block;
+.directions .navigation li a{
+    display: inline-block;
     text-align: center;
     padding-top: 50px;
     color: #1289a7;
     font-size: 10px;
     background-position: center top;
     background-repeat: no-repeat;
-    height: 55px;
     width: 55px;
 }
-.navigation .india a{
-    background-image: url(../img/india.png)
+.directions .navigation .india a{
+    background-image: url("../img/india.png");
 }
-.navigation .nepal a{
+.directions .navigation .nepal a{
     background-image: url(../img/nepal.png)
 }
-.navigation .tibet a{
+.directions .navigation .tibet a{
     background-image: url(../img/tibet.png)
 }
-.navigation .butan a{
+.directions .navigation .butan a{
     background-image: url(../img/butan.png)
 }
-.navigation .shi a{
+.directions .navigation .shi a{
     background-image: url(../img/sri.png)
 }
-.navigation .mald a{
+.directions .navigation .mald a{
     background-image: url(../img/maldives.png)
 }
 
 .photo{
     background: url(../img/photo.jpg) no-repeat;
-    width: 1000px;
     height: 237px;
-    background-position: -88px -553px;
-    border-bottom: 1px solid #138aa7;
-    border-top: 1px solid #138aa7;
 }
 .menu{
     background: url(../img/panel.png) no-repeat;
@@ -119,21 +101,33 @@ body{
 }
 .menu li{
     display: inline-block;
-    position: relative;
+    position: relative; /*для отображения выпадаюещего меню*/
 }
 .menu li a{
-    display: block;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     line-height: 29px;
     padding: 0 20px;
 }
+.menu .triangle:after {
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    content: " ";
+    border: 4px solid;
+    border-color:  #fff transparent transparent transparent;
+}
+/*выпадающее меню*/
 .menu li ul{
     display: none;
     position: absolute;
     padding-left:0;
     width: 150px;
     background: #303030;
+    box-shadow: 0 3px 20px rgba(0,0,0,.6);
 }
 .menu li ul li{
     white-space: nowrap;
@@ -144,74 +138,42 @@ body{
 }
 
 /* Контент*/
-.left_block{
-    float: left;
+.content{
+    height:550px;
+}
+.left_block, .right_block{
     width: 210px;
-    height: 550px;
+    max-height: 550px;
+    height: 100%;
+    overflow: hidden;
     background: #edeef0;
-    border-right: 1px solid #c7cacf;
     color: #414b43;
     text-align: center;
 }
-.left_block p, .right_block p{
+.left_block{
+    float: left;
+    border-right: 1px solid #c7cacf;
+}
+.left_block .caption, .right_block .caption{
     font-size: 18px;
     font-weight: bold;
     padding-top: 15px;
 }
-.left_block ul{
+.left_block p, .right_block p{
     line-height: 1.5;
-    font: 14px;
-    padding-top: 10px;
+    font-size: 14px;
 }
 
 .right_block{
     float: right;
-    width: 210px;
-    height: 550px;
-    background: #edeef0;
     border-left: 1px solid #c7cacf;
-    color: #414b43;
-    text-align: center;
 }
 
 .footer{
     clear: both;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 20px;
-    background-color: transparent;
-    width: 100%;
-    margin: 0;
-    z-index: 1;
-}
-.footer p{
-    display: block;
+    height: 25px;
+    padding: 5px 0;
 }
 
 
-/* для выпадающего списка
-.nav ul li{
-    position: relative;
-}
-
-.nav .dropdown{
-    position: absolute;
-    top: 100%; /* опускается на всю высоту Li вниз
-    width: 150px; /* esli nado
-    background: ;
-    display: none;
-}
-
-.nav li:hover .dropdown{
-    display: block;
-}
-.nav .dropdown li{
-    width: 100%; /* nav ul li a padding 0 15px*
-    height:45px;
-}
-
-.nav .dropdown li a{
-    line-height:45px;
-    height: 45px; */
