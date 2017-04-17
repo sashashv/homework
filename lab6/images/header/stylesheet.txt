@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAB2CAYAAAA9SzjsAAAFnElEQVRoQ+2aT2hjRRzHZ16SKiJYPXlaU2/+QXdR8KCHVg+iHmwO4kXY9CKCiBuk2dZN2dbtutsUTFcQFERTEAQ9dPeoIBs8KAhi96Qg0igoeBBy2l2b5I3f7+skvM2+92YmLxSVN/Bj0pd5v8/8/ryZye9VikNo8hAYIoM4ednaXSdWG9NT+V65XlvcWjxbP5rz5fT5lcWWDc0KQqVSiR0oLCKKF4VCL8TReq1qdb9xEABlABpQOg3p6D4wIDWE7rkl320oIcpUqKRY6HYLF0evbZ6qNk0ui7TkwP/dy3QJpA1ACcp2B8rC1kFBc6NWXUgCxbprcb1+GV/OekrORQW4emZjVUh5WghZYTKMBeFNBOWUXLvez+/emuvRqqARGkAYl5WTQZ8aQgW+VHRf0Bjw/x5ECnnpYP6KaRw0xklJdVwp9Wtqd1XXN5DCchiLm/wuxfbYKWwKpOv3xifeVWHU+Azi5MXMXZm7kj2AdaqMEQ9DuA1fgTSllNyOjc2YXVBOpYNdMqyQgDmAhjtmHM0GsoqbsQNGtjYgMyZTbCB7UFJMUHTMZM0kIHRZK8kaG8jHUMCgR7WJuetQAj8PE2gNYaNtC66qpAq8fjYISGotgObGigkA3Nt/MM1Sf78GEFM9ssUGHhCe4ukqm8YHcyZuBUiC4Kzt1BYAaUbdEQmBFbMYPDwxWqJiXfY/h9A9cFnSkz7qwcQVOXFZAYjn3xOGmHCpLyHobecUHtwAUBGfudQzGfiZjTNvQS7FZVQYaFwgLTMrcVgGcfJi5q7MXU4ecBocW8AJlzmSNLIksrVaSTwTR0KWzmzOhsscSZC4Ao9x7boBgkrdfrewMJjt0rlzRb+f4/7Pg0YHkJKpTBhrSV+q01KpCyg3BUciKvOFPx3+m2NYRUoF2axV51ANmodiznzYvFx/5vzycntQqkoFQVGzwgInK3fSV4B5HRRuWih0Nrq9QqmQ7+6ksgSBD6pCrD2GS4O8pq0LfrPAjZWxLQmyi+VZX/Gn281NyucZ/PGzixnU88o2T5yX95uMT9LYbKm38eRwTOauzF1OHnAa/O/JLr4vwcp7fDB9KUUHPyjXRhfOOPOMluidcI8vY1ibDxRhcQSkw/3Gxm9myGC/D6/Ik4YE+8d6nUWDacw+WG0xM+zvqlmvnTSWPPR4G4OFCA4Xwp9VnmznvH7LtLyHtca6S7+zCnwfDji2444fKrLRKrwZunOs/YQQT3it8NYadY2HCVMCRFrCN6SeEq/jBc2V/V6+yTMXr3G7xYGis9+favGaPp81uM8nnSQjIQi0gpta+BLnLNH2vH4FB7q9G6758gLOATu4totxRfzw34579RQHGRY3+XzIXH8NENZaige+V1tKym3Eh9eCYps+1TSjYmN8TuxyL3lUBnHyYuauzF1OHnAabMwubLl5rhoQH1U611pxMBlTDbKAMY9B7oV8nVRnHGs/CRY9pe5DtwHhC7OXAfnCyU96cKwlAOQwZgXyGuQuyFnIWwDtu4IiIQB4UHQE8i7kacgUhL8dXwDk50lCeKZ6B/KQVnoN/TwgX04EouPxCPo65ElIF/IVpAbI95OE3Kbj8TZ6nrveHMcKTsiUwjMYQ/f8BXkOEPbOzeZh3GbAIU8B8q0zwWSJjs2z6D+HfAZ5FaCrriAbS+6A0vchJcgr4RcASHX8aV5qjBBtzTPoP4X8BnkRin8E4AF8vh/yDf7+Pck6W8jtUHIKsgT5BMJC20sQPqg8e70B0J9xICuItuYe9O9pxbTobgjT/G9tZQ39H1Hus4Zo0DH0H0FG/4mJqb0M+TA1RIOeQM/l5lEIJ3kdwldOTIrI2piTJRrC1flxHaMH0TO1PwDgp9QxGVWA7CKIK/V3APwSB+B1Z0siYMZnJTUkyYLBdxnExkvDMYfirn8AGDlvlbgRrGYAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-home {
+    width: 12px;
+    height: 11px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon {
+    width: 14px;
+    height: 18px;
+    background-position: -5px -26px;
+}
+
+.sprite-mail {
+    width: 12px;
+    height: 9px;
+    background-position: -5px -54px;
+}
+
+.sprite-map {
+    width: 14px;
+    height: 10px;
+    background-position: -5px -73px;
+}
+
+.sprite-phone {
+    width: 15px;
+    height: 20px;
+    background-position: -5px -93px;
+}
