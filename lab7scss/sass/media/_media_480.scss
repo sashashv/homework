@@ -1,0 +1,119 @@
+@media (max-width: 767px){
+
+  header {
+    min-height: 547px;
+    .logo {
+      text-align: center;
+    }
+    .nav {
+      position: relative;
+      min-height: 40px;
+      z-index: 100;
+
+      ul {
+        width: 250px;
+        position: absolute;
+        top: 0;
+        border: solid 1px #999;
+        background: rgba(53, 39, 61, 0.9);
+        border-radius: 5px;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+        left: 50%;
+        margin-left: -124px;
+        &:hover li {
+          display: block;
+        }
+
+        li {
+          display: none; /* скройте все элементы &lt;li&gt; */
+          margin: 0;
+          a {
+            display: block;
+            text-align: center;
+          }
+        }
+        .current {
+          display: block; /* показывайте только текущий элемент &lt;li&gt; */
+          a {
+            background: none;
+          }
+        }
+      }
+    }
+    .slider {
+      .owl-carousel{
+        .owl-dots {
+          padding-top: 50px;
+        }
+      }
+      .header_text {
+        padding-top: 95px;
+        padding-bottom: 95px;
+        text-align: center;
+        h1 {
+          font-size: 2.25rem;
+        }
+        h2 {
+          font-size: $fs-title;
+        }
+      }
+      .arrow, &.light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+  }
+  .about{
+    .our_company1, .our_company2, .our_company3 {
+      padding-bottom: 30px;
+      max-width: 100%;
+      p{
+        max-height: 75px;
+      }
+    }
+    .our_company3{
+      padding-bottom: 0;
+    }
+  }
+  .news{
+    .reviews{
+      margin: 0 50px 90px;
+    }
+    .updates{
+      margin: 0 auto 90px;
+      max-width: 300px;
+      li{
+        a{
+          overflow: hidden;
+          max-width: 225px;
+        }
+        p{
+          overflow: hidden;
+          max-width: 269px;
+        }
+      }
+    }
+  }
+  .last_articles{
+    .first, .second, .third{
+      width: 100%;
+      max-height: 140px;
+      margin-bottom: 65px;
+      margin-left: 0;
+    }
+  }
+  footer{
+    .footer_menu{
+      text-align: center;
+      li{
+        a{
+          font-size: 1.25rem;
+        }
+      }
+    }
+    .designed{
+      text-align: center;
+      padding-top: 0;
+    }
+  }
+}

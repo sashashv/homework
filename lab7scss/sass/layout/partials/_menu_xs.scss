@@ -1,0 +1,30 @@
+
+.nav {
+  position: relative;
+  margin: 20px 0;
+}
+
+.nav li {
+  margin: 0 5px 10px 0;
+  display: inline-block;
+}
+.nav a {
+  padding: 7px 12px;
+  text-transform: uppercase;
+  font-size: $fs-title-large;
+  text-decoration: none;
+  color: #fff;
+  line-height: 100%;
+  border-bottom: 2px solid transparent;
+}
+.nav a:hover {
+  text-shadow: 0 0 8px rgba(255,255,255,.5);
+  border-bottom: 2px solid $pink;
+  background-color: rgba(53, 39, 61, 0.9);
+}
+
+/* центральный nav */
+.nav ul {
+  text-align: center;
+}
+

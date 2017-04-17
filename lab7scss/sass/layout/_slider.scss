@@ -1,0 +1,41 @@
+.slider{
+  position: relative;
+
+  .header_text{
+    text-shadow: 0 2px 2px rgba(0,0,0,.3);
+    padding-top:95px;
+    padding-bottom: 65px;
+
+    h1{
+      color: $color_text;
+      font-size: 3.75rem;
+      line-height: 36px;
+      padding-bottom: 12px;
+      text-transform: capitalize;
+    }
+    h2{
+      color:  #eebfff;
+      font-size: $fs-title-extra-large;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+    }
+    h3{
+      color: $color_text;
+      font: {
+        size: $fs-title;
+        family: $font_light;
+        weight: 300;
+      }
+      max-width: 520px;
+      line-height: 24px;
+    }
+  }
+
+  .iphone{
+    padding-left: 70px;
+    margin-top: -25px;
+    img{
+      max-width: 82%;
+    }
+  }
+}
