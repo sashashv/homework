@@ -1,0 +1,38 @@
+@media (max-width: 502px) {
+  header{
+    .form_search{
+      form{
+        input{
+          width: 150px;
+        }
+      }
+    }
+    .basket{
+      margin-left: 30px;
+    }
+  }
+  section{
+    .slider_one{
+      .photo{
+        max-width: 100px;
+        display: block;
+        margin:0 auto;
+      }
+      .text{
+        padding:20px 0;
+        width: 100%;
+        text-align:center;
+        h1{
+          max-width: none;
+        }
+        p{
+          display: none;
+        }
+        a{
+          display: inline-block;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

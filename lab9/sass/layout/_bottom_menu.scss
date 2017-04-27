@@ -1,0 +1,39 @@
+.bottom_menu{
+  background-color: $bg_bottom_menu;
+  color: $white;
+  padding: 40px 0 40px 65px;
+  .bottom_menu_block {
+    .bottom_menu_option {
+      padding-bottom: 20px;
+      a {
+        font-size: $fs_title;
+        color: $white;
+        text-decoration: none;
+        display: block;
+        &:hover{
+          text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.72);
+        }
+      }
+    }
+    .bottom_menu_submenu {
+      ul {
+        font-size: 0;
+        li {
+          padding-bottom: 8px;
+          &:last-child{
+            padding-bottom: 0;
+          }
+          a {
+            font: $fs_bottom_part $font_content;
+            text-decoration: none;
+            color: $white;
+            text-transform: capitalize;
+            &:hover{
+              text-shadow: 1px 5px 5px rgba(255, 255, 255, 0.92);
+            }
+          }
+        }
+      }
+    }
+  }
+}

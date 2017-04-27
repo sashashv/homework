@@ -1,0 +1,13 @@
+footer{
+  background-color: $bg_footer;
+  padding: 16px 0;
+  .copyright{
+    p{
+      font-size: $fs_bottom_part;
+      font-family: $font_content;
+      color: $white;
+      text-align: center;
+      padding-right: 43px;
+    }
+  }
+}

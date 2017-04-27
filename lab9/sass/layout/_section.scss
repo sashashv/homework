@@ -1,0 +1,72 @@
+section {
+  .slider_one {
+    background-color: $bg_slider;
+    padding: 67px 0 25px;
+    text-align: center;
+    .photo {
+      max-width: 278px;
+      display: inline-block;
+    }
+    .text {
+      color: $white;
+      padding: 12px 0 0 100px;
+      display: inline-block;
+      text-align: left;
+      h1 {
+        font-size: $fs-title-extra-large;
+        max-width: 320px;
+        line-height: 0.885;
+        padding-bottom: 13px;
+      }
+      p {
+        font: $fs_content $font_content;
+        max-width: 410px;
+        line-height: 1.647;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+        font-size: $fs_title;
+        border: 2px solid $white;
+        border-radius: 8px;
+        margin: 28px 3px;
+        padding: 7px 26px;
+      }
+    }
+  }
+  .clothes {
+    padding: 20px 0 14px 0;
+    background-color: $white;
+    min-height: 190px;
+    text-align: center;
+    .slide {
+      .photo {
+        display: inline-block;
+        max-width: 178px;
+        min-height: 151px;
+        margin-right: 25px;
+      }
+      .description {
+        display: inline-block;
+        vertical-align: 45px;
+        text-align: left;
+        p {
+          color: $grey;
+          max-width: 76px;
+          font-size: $fs_title;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          background-color: $bg_buttom;
+          color: $white;
+          font-size: $fs_buttom_a;
+          border: 2px solid $bg_buttom;
+          border-radius: 5px;
+          padding: 5px 13px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.clothes {
+  .slide-two {
+    position: relative;
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      display: block;
+      .owl-prev {
+        width: 29px;
+        height: 88px;
+        content: '';
+        background: url("../images/arrow.png");
+        left: -15%;
+        top: 20%;
+        position: absolute;
+      }
+      .owl-next {
+        width: 29px;
+        height: 88px;
+        content: '';
+        background: url("../images/arrow.png") ;
+        transform: rotate(180deg);
+        right: -15%;
+        top: 20%;
+        position: absolute;
+      }
+    }
+  }
+}

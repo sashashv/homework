@@ -1,0 +1,194 @@
+@media (max-width: 767px) {
+  header {
+    .logo{
+      text-align: center;
+      font-size: $fs_logo_767;
+    }
+    .form_search {
+      text-align: right;
+      form {
+        input {
+          display: inline-block;
+          width: 250px;
+          font-size: $fs_title_767;
+          background: none;
+          position: relative;
+          &:focus{
+            -webkit-box-shadow: 1px 1px 8px 0px rgba(62, 50, 50, 0.75);
+            -moz-box-shadow:    1px 1px 8px 0px rgba(62, 50, 50, 0.75);
+            box-shadow:         1px 1px 8px 0px rgba(62, 50, 50, 0.75);
+          }
+        }
+      }
+    }
+    .basket{
+      text-align: left;
+      margin-left: 80px;
+      .image{
+        img{
+          max-width: 25px;
+        }
+      }
+      .cart{
+        font-size: $fs_cart-767;
+        text-align: left;
+        margin-left: 0;
+      }
+    }
+  }
+  nav {
+    .main_menu {
+      position: relative;
+      z-index: 2;
+      ul {
+        position: absolute;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        &:hover li {
+          display: block;
+        }
+        li {
+          width: 100%;
+          display: none;
+          margin: 0;
+          float: none;
+          background: rgba(76, 207, 193, 0.8);
+          &:hover {
+            background: rgba(54, 194, 185, 0.8);
+          }
+          &::after{
+            display: none;
+          }
+          a {
+            display: block;
+            text-align: center;
+          }
+          &.pull {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  section {
+    .slider_one{
+      .photo{
+        max-width: 150px;
+      }
+      .text {
+        padding-left: 50px;
+        h1 {
+          font-size: $fs_title-extra-large-767;
+        }
+        p {
+          font-size: $fs-content-767;
+        }
+        a {
+          font-size: $fs_title-767;
+        }
+      }
+    }
+    .clothes{
+      min-height: 150px;
+      .slide{
+        .photo{
+          max-width:100px;
+          min-height: 140px;
+          padding-top: 17px;
+
+        }
+        .description{
+          p{
+            font-size: $fs_title-767;
+          }
+          a{
+            font-size: $fs_buttom_a_767;
+          }
+        }
+      }
+    }
+   }
+  .content{
+    .gallery{
+      margin-top: 20px;
+      .item{
+        width: 140px;
+        height: 150px;
+        margin-bottom: 20px;
+        .photo{
+          min-height: 84px;
+          img{
+            max-width: 70px;
+          }
+        }
+
+      }
+      .show{
+        width: 140px;
+        height: 150px;
+        margin: 0 auto;
+        a{
+          display: inline-block;
+          text-decoration: none;
+          background-color: $bg_buttom;
+          color: $white;
+          font-size:$fs_buttom_a;
+          border: 2px solid $bg_buttom;
+          border-radius: 3px;
+          padding: 3px 6px;
+          margin:65px 0 0 20px;
+        }
+
+      }
+    }
+  }
+
+  .bottom_menu{
+    padding:20px 0 20px 20px;
+    .options{
+      li{
+        padding-bottom: 15px;
+        &:last-child{
+          padding-bottom: 0;
+        }
+        a{
+          font-size: $fs_title-767;
+          color: $white;
+          text-decoration: none;
+          display: block;
+          &:hover{
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.72);
+          }
+        }
+        .submenu{
+          display: none;
+          background-color: rgba(45, 168, 155, 0.8);
+          margin: 0 -100%;
+          padding: 0 100%;
+          li{
+            padding-bottom: 5px;
+            &:last-child{
+              padding-bottom: 0;
+            }
+            a{
+              font: $fs_bottom_part_767 $font_content;
+              text-decoration: none;
+              color: $white;
+              text-transform: capitalize;
+              &:hover{
+                background-color: rgba(60, 195, 181, 0.8);
+                text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.72);
+                margin: 0 -100%;
+                padding: 0 100%;
+              }
+            }
+          }
+        }
+        &:hover .submenu{
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@media (max-width: 991px) {
+  header {
+    .form_search {
+      form {
+        input {
+          width: 370px;
+          margin: 26px auto 0;
+        }
+      }
+    }
+    .basket {
+      .cart {
+
+      }
+    }
+  }
+  nav {
+    .main_menu {
+      ul{
+        li{
+          a{
+            font-size: $fs_menu_991;
+            padding: 8px 15px;
+            &.first{
+              padding-left: 15px;
+            }
+            &.last{
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  section{
+    .slider_one{
+      .photo{
+        max-width: 200px;
+      }
+      .text{
+        max-width:350px;
+        h1{
+          font-size: $fs-title-extra-large-991;
+        }
+        p{
+          font-size: $fs_content-991;
+        }
+        a{
+          font-size: $fs_title-991;
+        }
+      }
+    }
+    .clothes{
+      .slide-two{
+        .owl-nav{
+          .owl-prev{
+            left: 0;
+          }
+          .owl-next{
+            right: 0;
+          }
+        }
+      }
+      .slide{
+        .photo{
+          max-width: 150px;
+        }
+      }
+    }
+  }
+  .content {
+    .featured_products {
+      h1 {
+        font-size: $fs-title-large-991;
+        padding: 10px 0 10px 22px;
+      }
+    }
+    .gallery {
+      margin-top: 40px;
+      .item {
+        width: 200px;
+        height: 210px;
+        padding-top: 20px;
+        margin-bottom: 40px;
+        .photo {
+          min-height:135px;
+          img{
+            max-width: 145px;
+          }
+        }
+        .about {
+          p, .price{
+            font-size: $fs_title-991;
+          }
+          a{
+            font-size: $fs_buttom_a_991;
+          }
+        }
+      }
+    }
+  }
+  .bottom_menu{
+    padding: 25px 0 25px 30px;
+    .bottom_menu_block {
+      .bottom_menu_option {
+        a {
+          font-size: $fs_title-991;
+        }
+      }
+      .bottom_menu_submenu{
+        ul{
+          li{
+            a{
+              font-size: $fs_bottom_part-991;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    padding: 10px 0;
+    .copyright{
+      p{
+        font-size: $fs_bottom_part-991;
+      }
+    }
+  }
+}

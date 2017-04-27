@@ -1,0 +1,52 @@
+header{
+  margin-bottom: 18px;
+  .logo{
+    font:{
+      size: $fs_logo;
+      family: $font_logo;
+    }
+    color: $logo;
+    text-align: left;
+    margin-top: 15px;
+  }
+  .form_search{
+    form{
+      input{
+        outline:none;
+        border: 1px solid #e1e1e1;
+        background-color: $bg_white;
+        width: 434px;
+        font-size: $fs_title;
+        margin: 26px 0 0 105px;
+        background-image: url("../images/search.png");
+        background-repeat: no-repeat;
+        background-position: 99% 50%;
+        padding: 0 30px 0 6px;
+      }
+    }
+  }
+  .basket {
+    margin-top: 20px;
+    text-align: right;
+    .image{
+      display: inline-block;
+    }
+    .cart {
+      font: {
+        size: $fs_cart;
+        family: $font_common;
+      }
+      display: inline-block;
+      color: $grey;
+      vertical-align: 5px;
+      margin-left: 10px;
+      //@include before-absolute{
+      //  background: url("../images/basket.png");
+      //  width: 41px;
+      //  height: 37px;
+      //  left: 26%;
+      //  top: -14%;
+      //}
+    }
+  }
+}
