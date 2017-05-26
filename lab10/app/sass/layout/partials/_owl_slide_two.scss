@@ -1,0 +1,30 @@
+.main-content{
+  .owl-carousel {
+    position: relative;
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      display: block;
+      .owl-prev {
+        width: 22px;
+        height: 20px;
+        content: '';
+        background: url("../images/arrow.png");
+        left: -9%;
+        top: 35%;
+        position: absolute;
+      }
+      .owl-next {
+        width: 22px;
+        height: 20px;
+        content: '';
+        background: url("../images/arrow.png") ;
+        transform: rotate(180deg);
+        right: -9%;
+        top: 35%;
+        position: absolute;
+      }
+    }
+  }
+}

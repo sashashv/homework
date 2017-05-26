@@ -1,0 +1,145 @@
+.main-content {
+  .left-col{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  h1 {
+    font-size: $fs-caption-content;
+    color: $content_text;
+    padding: 25px 0;
+  }
+  background: $bg_white;
+  margin-bottom: 15px;
+  .text_round_float{
+    color: $content_text;
+    p{
+      font-size: $fs-content-text;
+      line-height: 22px;
+      text-align: justify;
+      text-align-last: justify;
+    }
+    .image{
+      float: left;
+      width: 173px;
+      height: 173px;
+      border-radius: 50%;
+      shape-outside: inset(3% round 50%);
+      margin: 15px 24px 4px 0px;
+      background: url("../images/round_text.jpg") no-repeat;
+      background-position: 44% 0%;
+    }
+  }
+
+  .type {
+    font-size: $fs-content-text;
+    clear: both;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count:3;
+    -webkit-column-width:285px;
+    -moz-column-width:285px;
+    column-width: 285px;
+    -webkit-column-gap: 35px;
+    -moz-column-gap: 35px;
+    column-gap: 35px;
+    min-height: 345px;
+    margin-bottom: 50px;
+    p {
+      color: $content_text;
+      line-height: 22px;
+      font-size: $fs-content-text;
+      &.first {
+        padding-bottom: 25px;
+      }
+      &.note {
+        color: $content_color_text;
+        border-left: 3px solid $border_note;
+        padding-left: 15px;
+        line-height: 16px;
+      }
+      &.upload {
+        line-height: 22px;
+        margin: 28px 0;
+      }
+      &.quote {
+        color: $quote;
+        font-style: italic;
+        line-height: 16px;
+        position: relative;
+        padding: 35px 5px 35px 25px;
+        @include before-absolute{
+          background: url("../images/quotes.png") no-repeat;
+          width: 16px;
+          height: 15px;
+          left: 0;
+        }
+        @include after-absolute{
+          background: url("../images/quotes.png") no-repeat;
+          @include rotate(180deg);
+          width: 16px;
+          height: 15px;
+          right: 0;
+        }
+      }
+    }
+    ol {
+      counter-reset: myCounter;
+      li {
+        color: $content_text;
+        line-height: 22px;
+        &:not(:last-child) {
+          padding-bottom: 13px;
+        }
+
+        &::before {
+          counter-increment: myCounter;
+          content: counter(myCounter)'.';
+          color: $list;
+          font-size: $fs-list;
+          display: inline-block;
+          line-height: 22px;
+        }
+        a {
+          color: $content_color_text;
+        }
+      }
+    }
+    .click {
+      text-align: right;
+      a {
+        display: inline-block;
+        color: $content_color_text;
+        line-height: 22px;
+        position: relative;
+        padding-left: 15px;
+        @include before-absolute{
+          background: url("../images/click.png");
+          width: 6px;
+          height: 8px;
+          left: 0;
+          top: 24%;
+        }
+      }
+    }
+  }
+}
+.no-csscolumns{
+  .main-content{
+    .type{
+      clear:both;
+      p:not(.quote), ol li:not(:last-child){
+        padding-right: 15px;
+      }
+      ol{
+        li{
+          counter-reset: none;
+          &::before{
+            counter-increment: none;
+            content: '\2714';
+            color: $content_color_text;
+          }
+        }
+      }
+    }
+  }
+}

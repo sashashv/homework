@@ -1,0 +1,149 @@
+.ui-tabs.ui-widget.ui-widget-content{
+  border:0;
+  padding: 0;
+  margin-top: 25px;
+  ul.ui-tabs-nav.ui-widget-header{
+    padding: 0;
+    background: $white;
+    border: 0;
+    li.ui-tabs-tab{
+      border-radius: 15px 15px 0 0;
+      margin: 0;
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      margin:0 1px -1px -1px;
+      outline:none;
+
+      a#ui-id-1.ui-tabs-anchor, a#ui-id-2.ui-tabs-anchor{
+        padding: 4px 13px 5px 14px;
+        outline:none;
+        cursor: pointer;
+        font-size: $fs-content-text;
+        span{
+          color: $span;
+          display: inline-block;
+          margin-left: 5px;
+          @include before-absolute{
+            width: 1px;
+            height: 16px;
+            background-color: $span;
+            left: 75%;
+            top: 18%;
+          }
+        }
+      }
+      &.ui-state-default{
+        background: $bg_default;
+        border-bottom-color: transparent;
+        z-index:1;
+        a#ui-id-1.ui-tabs-anchor, a#ui-id-2.ui-tabs-anchor{
+          color:$tab;
+        }
+        @include after-absolute{
+          background: url("../images/tab1_default.png") no-repeat;
+          width: 32px;
+          height: 27px;
+          right: -23px;
+          top: 1px;
+        }
+      }
+      &.ui-state-active{
+        background: $white;
+        z-index:12;
+        a#ui-id-1.ui-tabs-anchor, a#ui-id-2.ui-tabs-anchor{
+          color: $content_color_text;
+        }
+        @include after-absolute{
+          background: url("../images/tab1.png") no-repeat;
+          width: 32px;
+          height: 27px;
+          right: -23px;
+          top: 1px;
+        }
+      }
+    }
+  }
+  #tabs-1.ui-tabs-panel,  #tabs-2.ui-tabs-panel{
+    padding: 16px 25px 18px 18px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    min-height: 151px;
+    position: relative;
+    z-index:11;
+    .right, .left {
+      float: left;
+      display: inline-block;
+      .el {
+        margin-bottom: 5px;
+        position: relative;
+        span{
+          position: absolute;
+          left: 31%;
+          top: 38%;
+          font-size: $fs-circle;
+          color: $content_text;
+          font-family: $font_common
+        }
+      }
+      #jRate {
+        svg{
+          min-width: 18px;
+        }
+      }
+    }
+    .left {
+      margin-right: 34px;
+      margin-top: 7px;
+      #progressbar-5.ui-progressbar{
+        height: 16px;
+        @include gradient-bottom($bg_grey_gradient, $bg_grey_gradient2);
+        border: 1px solid rgba(0, 0, 0, 0.21);
+        .ui-progressbar-value.ui-widget-header {
+          margin: 0;
+          @include gradient-bottom($bg_orange_gradient, $bg_orange_gradient2);
+          height: 16px;
+          border: 0;
+        }
+        .progress-label {
+          position: absolute;
+          font-size: 0.85rem;
+          font-family: $font_common;
+          color: $content_text;
+          left: 30%;
+          top: 15%;
+        }
+      }
+
+
+      .ui-slider { //slider with handles
+        min-width: 214px;
+        height: 14px;
+        border: 1px solid rgba(0, 0, 0, .21);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-color: $bg_radial_gradient;
+        @include gradient-bottom($bg_grey_gradient, $bg_grey_gradient2);
+        .ui-slider-handle {
+          background: url("../images/tab_slider.png") no-repeat;
+          height: 27px;
+          border: none;
+          outline: none;
+          margin-top: -3px;
+          box-shadow: none;
+        }
+        .ui-slider-range {
+          width: 80px;
+          height: 12px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          background-color: $bg_radial_gradient;
+          @include gradient-bottom($bg_orange_gradient, $bg_orange_gradient2);
+        }
+      }
+    }
+  }
+}

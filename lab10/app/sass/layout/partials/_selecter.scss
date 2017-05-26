@@ -1,0 +1,60 @@
+.selecter {
+  margin: 0;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  #day + .selecter-selected {
+    width: 83px;
+    margin-right: 4px;
+    .selecter-options{
+      width: 95%;
+    }
+  }
+  #month + .selecter-selected {
+    width: 119px;
+    margin-right: 3px;
+    .selecter-options{
+      width: 97%;
+    }
+  }
+  #year + .selecter-selected {
+    width: 105px;
+  }
+  #city + .selecter-selected {
+    width: 320px;
+  }
+  .selecter-selected {
+    @include after-absolute {
+      right: -6px;
+      top: 4px;
+      background: url("../images/select.png") no-repeat;
+      width: 42px;
+      height: 42px;
+      border: 0;
+    }
+    display: inline-block;
+    font-size: $fs-form-text;
+    color: $label;
+    height: 36px;
+    padding: 8px 12px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: $bg_grey_gradient;
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, .33);
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .33);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .33);
+    @include gradient-bottom($bg_grey_gradient, $bg_grey_gradient2);
+    filter: none;
+  }
+  .selecter-options {
+    .selecter-item {
+      color: $label;
+      font-size: $fs-form-text;
+      padding: 6px 10px;
+    }
+  }
+}

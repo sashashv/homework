@@ -1,0 +1,585 @@
+@media (max-width: 991px){
+  header{
+    .logo{
+      max-width: 200px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .register_form{
+    min-height: 373px;
+    .form_box{
+      max-width: 710px;
+      min-height: 335px;
+      max-height: 335px;
+      .right-col{
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .photos{
+        max-width: 350px;
+        max-height: 335px;
+        .slide{
+          max-height: 335px;
+          .owl-dots{
+            margin-top: -90px;
+          }
+        }
+      }
+      .form_container {
+        //.text_gradient {
+        //  font-size: $fs-caption-form_991;
+        //  margin: 20px 0;
+        //  max-height:30px;
+        //}
+        .gradient-text{
+          width: 100%;
+          max-height: 78px;
+          margin-top: -10px;
+          text{
+            font-size: $fs-caption-form-991;
+          }
+        }
+        form {
+          ol {
+            li {
+              max-width: 285px;
+              height: 30px;
+              margin-bottom: 10px;
+              &.choose{
+                margin-left: 45px;
+                .checkbox, .radio{
+                  ul{
+                    li{
+                      height: 8px;
+                    }
+                  }
+                }
+              }
+              label {
+                font-size: $fs-form-text_991;
+                &.look{
+                  padding: 0 10px 0 20px;
+                  @include before-absolute {
+                    left: 33%;
+                    bottom: 71%;
+                    background-size: cover;
+                    width: 10px;
+                    height: 10px;
+                  }
+                }
+                &:not(.look) {
+                  min-width: 40px;
+                  margin-right: 5px;
+                }
+              }
+              .i_am, .look_for {
+                width: 67px;
+                height: 28px;
+                background-size: cover;
+                margin-top: 0;
+              }
+              button.start{
+                width: 238px;
+                height: 48px;
+                margin: 5px 0 0 45px;
+                font-size: $fs-button-991;
+              }
+              input[type="text"]{
+                width: 233px;
+                height: 29px;
+                padding: 5px 10px;
+              }
+              .selecter{
+                #day + .selecter-selected{
+                  width: 60px;
+                  margin-right: 0;
+                }
+                #month + .selecter-selected{
+                  width: 95px;
+                  margin-right: 0;
+                }
+                #year + .selecter-selected{
+                  width: 70px;
+                }
+                #city + .selecter-selected {
+                  width: 233px;
+                }
+                .selecter-selected{
+                  font-size: $fs-form-text_991;
+                  height: 29px;
+                  padding: 6px 12px;
+                  @include after-absolute{
+                    right: 1px;
+                    top: -1px;
+                    background-size: cover;
+                    width: 26px;
+                    height: 27px;
+                    border: 0;
+                  }
+                }
+                .selecter-options{
+                  font-size: $fs-form-text-991;
+                  .selecter-item{
+                    font-size: $fs-form-text_991;
+                    padding: 4px 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-content{
+    [class*="col-"]{
+      clear: both;
+    }
+    h1{
+      font-size: $fs-caption-content_991;
+    }
+    .text_round_float, .users_list{
+      max-width: 710px;
+      margin: 0 auto;
+    }
+    .text_round_float{
+      .image{
+        width: 155px;
+        height: 155px;
+        margin-top: 0;
+        img{
+          width: 100%;
+        }
+      }
+      p{
+        line-height: 25px;
+        margin-top: 5px;
+      }
+    }
+
+    .users_list{
+      .carousel {
+        margin: 0 auto;
+        max-width: 630px;
+        .owl-carousel {
+          .owl-nav {
+            .owl-next {
+              right: -6%;
+            }
+            .owl-prev {
+              left: -6%;
+            }
+          }
+        }
+      }
+
+      #tabs-2.ui-tabs-panel, #tabs-1.ui-tabs-panel{
+        .left{
+          margin: 30px 65px 0 140px;
+          #progressbar-5{
+            .progress-label{
+              top: 25%;
+              left: 36%;
+            }
+          }
+          .steps{
+            margin: 33px auto;
+          }
+        }
+        .right{
+          .el{
+            canvas{
+              min-width: 100px;
+            }
+            span{
+              left: 30%;
+              top: 39%;
+            }
+          }
+          #jRate{
+            svg{
+              min-width: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 891px){
+  .register_form{
+    @include before-absolute{
+      left: 11%;
+    }
+    @include after-absolute{
+      right: 11%;
+    }
+  }
+}
+@media (max-width: 767px){
+  header{
+    margin: 10px 0 5px;
+    .logo{
+      max-width: 110px;
+      padding-left: 15px;
+    }
+  }
+  .register_form {
+    min-height: 250px;
+    @include before-absolute {
+      left: 26%;
+    }
+    @include after-absolute {
+      right: 26%;
+    }
+    .form_box {
+      max-width: 380px;
+      .right-col {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .form_container {
+        .gradient-text{
+          width: 100%;
+          max-height: 73px;
+          margin-top: -10px;
+          margin-left: 55px;
+          text{
+            font-size: $fs-caption-form_767;
+          }
+        }
+        form {
+          max-width: 285px;
+          margin: 0 auto;
+          ol {
+            li {
+              label {
+                &.look {
+                  @include before-absolute {
+                    left: 45%;
+                    bottom: 72%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-content{
+    h1{
+      font-size: $fs-caption-content_767;
+      padding: 15px 0;
+    }
+    .text_round_float, .users_list, .text_columns{
+      min-width: 0;
+      max-width: 420px;
+      margin: 0 auto;
+      .image{
+        width: 100px;
+        height: 100px;
+        margin: 7px 21px 0 0;
+        background-size: cover;
+      }
+      p{
+        font-size: $fs-content-text_767;
+        line-height: 20px;
+      }
+    }
+    .text_round_float{
+      max-height: 195px;
+      overflow: hidden;
+    }
+    .users_list{
+      .carousel {
+        margin: 0 auto;
+        max-width: 420px;
+        .owl-carousel {
+          .owl-nav {
+            display: none;
+          }
+        }
+      }
+      .ui-tabs.ui-widget.ui-widget-content {
+        ul.ui-tabs-nav.ui-widget-header {
+          li.ui-tabs-tab {
+            &.ui-state-default, &.ui-state-active {
+              @include after-absolute {
+                height: 28px;
+              }
+            }
+          }
+        }
+        #tabs-2.ui-tabs-panel, #tabs-1.ui-tabs-panel {
+          .left {
+            margin: 7px 34px 0 0;
+            min-width: 214px;
+            #progressbar-5 {
+              .progress-label {
+                top: 16%;
+                left: 27%;
+              }
+            }
+            .steps {
+              margin: 25px auto;
+            }
+          }
+          .right {
+            margin-top: 0;
+            .el {
+              canvas {
+                min-width: 90px;
+              }
+              span {
+                left: 32%;
+                top: 37%;
+              }
+            }
+            #jRate {
+              svg {
+                min-width: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .type{
+      min-height: 225px;
+      p.upload{
+        margin:0;
+      }
+      ol{
+        font-size: $fs-content-text_767;
+        li:not(:last-child){
+          padding-bottom: 0;
+        }
+      }
+      .click{
+        a{
+          font-size: $fs-content-text_767;
+        }
+      }
+    }
+  }
+  footer{
+    .info-footer{
+      padding-top: 10px;
+      .logo-footer{
+        max-width: 80px;
+      }
+      .name{
+        p{
+          font-size: $fs-content-text_767;
+          &:last-child{
+            font-size: $fs-content-text_767;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 720px){
+  .register_form{
+    @include before-absolute{
+      left: 23%;
+    }
+    @include after-absolute{
+      right: 23%;
+    }
+  }
+}
+@media (max-width: 600px){
+  .register_form{
+    @include before-absolute{
+      left: 18%;
+    }
+    @include after-absolute{
+      right: 18%;
+    }
+  }
+}
+@media (max-width: 480px){
+  .register_form{
+    min-height: 250px;
+    @include before-absolute{
+      left: 21%;
+    }
+    @include after-absolute{
+      right: 21%;
+    }
+    .form_box{
+      max-width: 275px;
+      min-height: 245px;
+      .form_container{
+
+        .gradient-text{
+          width: 100%;
+          max-height: 64px;
+          margin-top: -21px;
+          margin-left: 10px;
+          text{
+            font-size: $fs-caption-form_480;
+          }
+
+        }
+        form{
+          max-width: 225px;
+          margin: 0 auto 25px;
+          ol{
+            li{
+              max-width: 231px;
+              height: 21px;
+              margin-bottom: 6px;
+              &.choose{
+                .checkbox, .radio{
+                  ul{
+                    li{
+                      height: 12px;
+                      input[type="checkbox"], input[type="radio"]{
+                        & + label{
+                          padding-left: 15px;
+                          @include before-absolute{
+                            width: 7px;
+                            height: 7px;
+                            background-size: cover;
+                            top: 3px;
+                          }
+                        }
+                        &:checked + label{
+                          @include before-absolute{
+                            width: 7px;
+                            height: 7px;
+                            background-size: cover;
+                            top: 3px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              label{
+                &.look {
+                  padding: 0 8px 0 21px;
+                  @include before-absolute{
+                    left: 43%;
+                    bottom: 73%;
+                  }
+                }
+                &:not(.look) {
+                  min-width: 30px;
+                }
+                font-size: $fs-form-text_480;
+              }
+              .i_am, .look_for {
+                width: 47px;
+                height: 19px;
+              }
+              button.start{
+                width: 170px;
+                height: 36px;
+                font-size: $fs-button_480;
+              }
+              input[type="text"]{
+                width: 182px;
+                padding: 1px 10px;
+                height: 21px;
+              }
+              .selecter{
+                #day + .selecter-selected{
+                  width: 45px;
+                }
+                #month + .selecter-selected{
+                  width: 75px;
+                }
+                #year + .selecter-selected{
+                  width: 56px;
+                }
+                #city + .selecter-selected {
+                  width: 182px;
+                }
+                .selecter-selected{
+                  font-size: $fs-form-text_480;
+                  height: 21px;
+                  padding: 3px 7px;
+                  @include after-absolute{
+                    top: -1px;
+                    right: -1px;
+                    width: 20px;
+                    height: 20px;
+                  }
+                }
+                .selecter-options{
+                  font-size: $fs-form-text-480;
+                  .selecter-item{
+                    font-size: $fs-form-text_480;
+                    padding: 2px 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-content{
+    .text_round_float, .users_list, .text_columns{
+      max-width: 280px;
+    }
+    .text_round_float{
+      p{
+        line-height: 16px;
+      }
+    }
+    .users_list{
+      .carousel{
+        max-width: 70px;
+        .owl-carousel{
+          .owl-nav{
+            display: block;
+            .owl-next{
+              right: -90%;
+            }
+            .owl-prev{
+              left: -90%;
+            }
+          }
+        }
+      }
+      .ui-tabs.ui-widget.ui-widget-content{
+        #tabs-2.ui-tabs-panel{
+          padding: 16px 0;
+          .left, .right{
+            float: none;
+            display: block;
+            margin: 0 auto;
+          }
+          .left{
+            max-width: 214px;
+            #progressbar-5{
+              .progress-label{
+                top: 6%;
+                left: 46%;
+              }
+            }
+          }
+          .right{
+            max-width: 90px;
+            margin-top: 15px;
+            .el{
+              span{
+                left: 31%;
+                top: 38%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

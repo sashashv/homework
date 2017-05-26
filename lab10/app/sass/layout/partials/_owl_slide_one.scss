@@ -1,0 +1,36 @@
+.register_form{
+  .slide-one{
+    .owl-nav{
+      display: none;
+    }
+    .owl-dots{
+      margin-top: -35px;
+      position: relative;
+      text-align: center;
+      .owl-dot{
+        display:inline-block;
+        zoom:1;
+        span{
+          width:8px;
+          height:8px;
+          margin:5px;
+          background-color: $border_black;
+          border: 1px solid $border_black;
+          @include opacity(0.5);
+          box-shadow: $shadow-white-hover;
+          display:block;
+          -webkit-backface-visibility:visible;
+          @include transition(200ms);
+          -webkit-border-radius:4px;
+          -moz-border-radius:4px;
+          border-radius:4px;
+        }
+        &.active span, &:hover span{
+          @include opacity(1);
+          box-shadow: $shadow-white-hover;
+          @include gradient-bottom($bg_orange_gradient, $bg_orange_gradient2);
+        }
+      }
+    }
+  }
+}

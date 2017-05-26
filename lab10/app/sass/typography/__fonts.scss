@@ -1,0 +1,41 @@
+$font: "../fonts";
+
+@font-face {
+  font-family: 'SourceSansProLight';
+  src: url('#{$font}/SourceSansProLight/SourceSansProLight.eot');
+  src: url('#{$font}/SourceSansProLight/SourceSansProLight?#iefix') format('embedded-opentype'),
+  url('#{$font}/SourceSansProLight/SourceSansProLight.woff') format('woff'),
+  url('#{$font}/SourceSansProLight/SourceSansProLight.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceSansProExtraLight";
+  src: url("#{$font}/SourceSansProExtraLight/SourceSansProExtraLight.eot");
+  src: url("#{$font}/SourceSansProExtraLight/SourceSansProExtraLight.eot?#iefix")format("embedded-opentype"),
+  url("#{$font}/SourceSansProExtraLight/SourceSansProExtraLight.woff") format("woff"),
+  url("#{$font}/SourceSansProExtraLight/SourceSansProExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+//@font-face {
+//  font-family: 'BebasNeue';
+//  src: url('#{$font}/BebasNeue/BebasNeue.eot');
+//  src: url('#{$font}/BebasNeue/BebasNeue?#iefix') format('embedded-opentype'),
+//  url('#{$font}/BebasNeue/BebasNeue.woff') format('woff'),
+//  url('#{$font}/BebasNeue/BebasNeue.ttf')  format('truetype');
+//}
+//@font-face {
+//  font-family: 'Lobster_1_4';
+//  src: url('#{$font}/Lobster/Lobster_1_4.eot');
+//  src: url('#{$font}/Lobster/Lobster_1_4?#iefix') format('embedded-opentype'),
+//  url('#{$font}/Lobster/Lobster_1_4.woff') format('woff'),
+//  url('#{$font}/Lobster/Lobster_1_4.ttf')  format('truetype');
+//}
+//@font-face {
+//  font-family: 'OpenSansRegular';
+//  src: url('#{$font}/OpenSansRegular/OpenSansRegular.eot');
+//  src: url('#{$font}/OpenSansRegular/OpenSansRegular?#iefix') format('embedded-opentype'),
+//  url('#{$font}/OpenSansRegular/OpenSansRegular.woff') format('woff'),
+//  url('#{$font}/OpenSansRegular/OpenSansRegular.ttf')  format('truetype');
+//}

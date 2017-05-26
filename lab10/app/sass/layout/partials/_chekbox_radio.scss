@@ -1,0 +1,52 @@
+li{
+  &.choose {
+    .checkbox, .radio {
+      ul {
+        li {
+          input[type="checkbox"] {
+            display: none;
+            & + label {
+              position: relative;
+              padding-left: 30px;
+              @include before-absolute {
+                background: url("../images/checkbox.png") no-repeat;
+                width: 14px;
+                height: 14px;
+                left: 0;
+              }
+            }
+            &:checked + label {
+              @include before-absolute {
+                background: url("../images/checked.png") no-repeat;
+                width: 14px;
+                height: 14px;
+                left: 0;
+              }
+            }
+          }
+          input[type="radio"] {
+            display: none;
+            & + label {
+              position: relative;
+              padding-left: 30px;
+              @include before-absolute {
+                background: url("../images/radio.png") no-repeat;
+                width: 14px;
+                height: 14px;
+                left: 0;
+              }
+            }
+            &:checked + label {
+              @include before-absolute {
+                background: url("../images/radio_set.png") no-repeat;
+                width: 14px;
+                height: 14px;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

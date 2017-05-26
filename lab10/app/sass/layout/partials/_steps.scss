@@ -1,0 +1,59 @@
+.steps{
+  position: relative;
+  width: 214px;
+  height: 28px;
+  margin: 25px auto;
+  a{
+    background: url("../images/step4.png") no-repeat;
+    position: absolute;
+    font: 9px "Verdana", sans-serif;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.42);
+    color: $content_text;
+    padding: 8px 10px 9px 16px;
+    text-decoration: none;
+    &:first-child {
+      background: url("../images/step1_not_done.png") no-repeat;
+      padding-left: 11px;
+      padding-right: 12px;
+      z-index: 4;
+      &:focus, &:hover{
+        background: url("../images/step1_focus.png") no-repeat;
+      }
+
+    }
+    &:last-child{
+      background: url("../images/step5.png") no-repeat;
+      right: 0;
+      padding-left: 11px;
+      padding-right: 8px;
+      &:focus, &:hover{
+        background: url("../images/step3.png") no-repeat;
+        position: absolute;
+        right: 0;
+      }
+    }
+    &:nth-child(2){
+      z-index: 3;
+      right: 57%;
+      &:focus, &:hover{
+        background: url("../images/step3.png") no-repeat;
+      }
+    }
+    &:nth-child(3){
+      z-index: 2;
+      right: 37%;
+      &:focus, &:hover{
+        background: url("../images/step3.png") no-repeat;
+      }
+    }
+    &:nth-child(4){
+      z-index: 1;
+      right: 18%;
+      &:focus, &:hover{
+        background: url("../images/step3.png") no-repeat;
+      }
+    }
+
+
+  }
+}

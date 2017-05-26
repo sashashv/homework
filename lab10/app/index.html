@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" async></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" async></script>
+    <![endif]-->
+</head>
+<body>
+<div class="global">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="register_form">
+        <div class="form_box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 left-col hidden-xs">
+                        <div class="photos">
+                            <div class="owl-carousel slide-one">
+                                <div>
+                                    <div class="slide first">
+                                        <img src="images/slide-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide second">
+                                        <img src="images/slide-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide third">
+                                        <img src="images/slide-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide fourth">
+                                        <img src="images/slide-4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 right-col">
+                        <div class="form_container">
+                            <!--<h1 class="text_gradient">-->
+                                <!--Join us now. It's <span>free</span>-->
+                            <!--</h1>-->
+                            <svg class="gradient-text">
+                                <defs>
+                                    <linearGradient id="textgradient" x1="0%" x2="0%" y1="0%" y2="100%">
+                                        <stop stop-color="#ffffff" offset="0%"/>
+                                        <stop stop-color="#ff8210" offset="100%"/>
+                                    </linearGradient>
+                                </defs>
+                                <text x="0" y="55" font-size="36" font-weight="200" fill="url(#textgradient)" stroke="none">Join us now. It's FREE</text>
+                            </svg>
+                            <form action="" id="signup" class="rf">
+                                <ol>
+                                    <li class="buttons">
+                                        <label for="i_am" onclick="javascript: return false;">I am</label>
+                                        <button class="i_am" id="i_am" onclick="javascript: return false;"></button>
+                                        <label class="look" for="look_for" onclick="javascript: return false;">looking for</label>
+                                        <button class="look_for" id="look_for" onclick="javascript: return false;"></button>
+                                    </li>
+                                    <li>
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" title="Enter your name" class="rfield" required>
+                                    </li>
+                                    <li class="age">
+                                        <label for="day">Age</label>
+                                        <select name="day" id="day" class="rfield" >
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <select name="month" id="month" class="rfield" >
+                                            <option value="january">January</option>
+                                            <option value="february">February</option>
+                                            <option value="march">March</option>
+                                        </select>
+                                        <select name="year" id="year" class="rfield" >
+                                            <option value="1990">1990</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1992">1992</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="city">City</label>
+                                        <select name="city" id="city">
+                                            <option value="London">London</option>
+                                            <option value="NY">New York </option>
+                                            <option value="Lisbon">Lisbon</option>
+                                        </select>
+                                    </li>
+                                    <li class="choose">
+                                        <div class="checkbox">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="cool">
+                                                    <label for="cool">I'm cool</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="good">
+                                                    <label for="good">Life's good</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="radio">
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="radio" value="tee" id="tee">
+                                                    <label for="tee">Tee</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="radio" value="beer" id="beer">
+                                                    <label for="beer">Beer</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="start btn_submit disabled">Start Now</button>
+                                    </li>
+                                </ol>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 left-col">
+                    <div class="text_round_float">
+                        <h1>Code this block</h1>
+                        <div class="image"></div>
+                        <p>
+                            This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. We
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 right-col">
+                    <div class="users_list">
+                        <h1>Users list</h1>
+                        <div class="carousel">
+                            <div class="owl-carousel slide-two">
+                                <div>
+                                    <div class="slide ">
+                                        <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="hidden_block">
+                                            <a href="#" class="info">SexyGirl</a>
+                                            <div class="wink">
+                                                <a href=""><img src="images/ico_wink.png" alt=""></a>
+                                            </div>
+                                            <div class="add">
+                                                <a href=""><img src="images/ico_add.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="hidden_block">
+                                            <a href="#" class="info">SexyGirl</a>
+                                            <div class="wink">
+                                                <a href=""><img src="images/ico_wink.png" alt=""></a>
+                                            </div>
+                                            <div class="add">
+                                                <a href=""><img src="images/ico_add.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="hidden_block">
+                                            <a href="#" class="info">SexyGirl</a>
+                                            <div class="wink">
+                                                <a href=""><img src="images/ico_wink.png" alt=""></a>
+                                            </div>
+                                            <div class="add">
+                                                <a href=""><img src="images/ico_add.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="hidden_block">
+                                            <a href="#" class="info">SexyGirl</a>
+                                            <div class="wink">
+                                                <a href=""><img src="images/ico_wink.png" alt=""></a>
+                                            </div>
+                                            <div class="add">
+                                                <a href=""><img src="images/ico_add.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="">
+                                        </div>
+                                        <div class="hidden_block">
+                                            <a href="#" class="info">SexyGirl</a>
+                                            <div class="wink">
+                                                <a href=""><img src="images/ico_wink.png" alt=""></a>
+                                            </div>
+                                            <div class="add">
+                                                <a href=""><img src="images/ico_add.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tabs">
+                            <ul>
+                                <li class="tab-1"><a href="#tabs-1">Users List</a></li>
+                                <li class="tab-2"><a href="#tabs-2">Active list tab <span>38</span></a></li>
+                            </ul>
+                            <div id="tabs-1">
+                            </div>
+                            <div id="tabs-2">
+                                <div class="left">
+                                    <div id = "progressbar-5">
+                                        <div class = "progress-label">
+                                            Loading...
+                                        </div>
+                                    </div>
+                                    <div class="steps">
+                                        <a href="#">Step 1</a>
+                                        <a href="#">Step 2</a>
+                                        <a href="#">Step 3</a>
+                                        <a href="#">Step 4</a>
+                                        <a href="#">Step 5</a>
+                                    </div>
+                                    <div id="slider-range"></div>
+                                </div>
+                                <div class="right">
+                                    <div class="el" data-thickness="17" data-size="90"><span class="el-label">35%</span></div>
+                                    <div id="jRate"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text_columns">
+                        <h1>
+                            How to succeed in online dating
+                        </h1>
+                        <div class="type">
+
+                            <p class="first hidden-xs">
+                                There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.
+                            </p>
+                            <p class="note hidden-xs">
+                                In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</span>
+                            </p>
+                            <p class="upload">
+                                You can also upload photos to your dating profile from your Facebook account.
+                            </p>
+                            <ol>
+                                <li>
+                                    Access your dating life even when you’re not browsing <a href="#">Cupid.com</a>!
+                                </li>
+                                <li>
+                                    Search for new matches from your browser easily
+                                </li>
+                                <li>
+                                    Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends are online or have updated their profile info
+                                </li>
+                                <li>
+                                    Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends
+                                </li>
+                            </ol>
+                            <p class="quote hidden-xs">
+                                In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
+                            </p>
+                            <div class="click"><a href="#">Click here to view more</a></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="info-footer">
+                        <div class="logo-footer">
+                            <img src="images/logo_footer.png" alt="">
+                        </div>
+
+                        <div class="name">
+                            <p><span>Vd</span> Web Coder Test Task</p>
+                            <p>2013</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.columnizer/1.6.0/jquery.columnizer.js" > </script>
+    <script src="js/custom.js" ></script>
+</div>
+</body>
+</html>

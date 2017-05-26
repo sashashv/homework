@@ -1,0 +1,92 @@
+.register_form{
+  min-height: 504px;
+  padding: 19px 0;
+  background-color: $bg_register_form;
+  background: radial-gradient(ellipse at 50% 50%, $bg_radial_gradient 0%, #ffc30d 40%, $bg_register_form 88%);
+  position: relative;
+  @include before-absolute{
+    z-index: 1;
+    bottom: 28px;
+    left: 16%;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: transparent;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  @include after-absolute{
+    z-index: 1;
+    bottom: 28px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: transparent;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 16%;
+    left: auto;
+  }
+  .form_box{
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-shadow: $shadow-black-form;
+    max-width: 960px;
+    min-height: 466px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    .left-col{
+      padding-left:0;
+      padding-right: 0;
+    }
+    .photos{
+      max-height: 466px;
+      .slide{
+        width: 100%;
+        max-height: 466px;
+        @include after-absolute{
+          width: 1px;
+          height: 100%;
+          background-color: $border_form;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+.no-cssgradients {
+  .register_form {
+    background: url("../images/bg-ie.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.no-cssgradients{
+  .register_form{
+    .slide-one {
+      .owl-dots {
+        .owl-dot {
+          &.active span, &:hover span {
+            filter: none;
+          }
+        }
+      }
+    }
+  }
+
+}

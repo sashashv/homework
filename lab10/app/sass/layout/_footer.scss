@@ -1,0 +1,30 @@
+footer{
+  .info-footer{
+    border-top: 1px solid $footer;
+    padding-top: 22px;
+    .logo-footer{
+      max-width: 112px;
+      display: inline-block;
+      img{
+        width: 100%;
+      }
+    }
+    .name{
+      float: right;
+      p{
+        text-transform: capitalize;
+        color: $content_text;
+        font-size: $fs-footer-text;
+        &:last-child, span{
+          color: $footer;
+          text-transform: uppercase;
+        }
+        &:last-child{
+          font-size: $fs-caption-content;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+}
